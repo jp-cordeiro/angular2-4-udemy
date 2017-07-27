@@ -2,8 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'giphy-list',
-  templateUrl: './giphy-list.component.html',
-  styleUrls: ['./giphy-list.component.css']
+  templateUrl: 'giphy-list.component.html'
 })
 export class GiphyListComponent implements OnInit {
 

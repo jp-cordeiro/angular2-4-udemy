@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {GiphyManualModule} from "app/giphy/giphy-manual/giphy-manual.module";
 
 import {HttpModule} from "@angular/http";
+import {AppRoutingModule} from "app/app-routing.module";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {HttpModule} from "@angular/http";
   imports: [
     BrowserModule,
     HttpModule,
-    GiphyManualModule
+    GiphyManualModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
