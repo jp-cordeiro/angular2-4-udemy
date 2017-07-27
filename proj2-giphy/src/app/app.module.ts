@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 import {GiphyManualModule} from "app/giphy/giphy-manual/giphy-manual.module";
-import {FormsModule} from "@angular/forms";
+
 import {HttpModule} from "@angular/http";
 
 @NgModule({
@@ -13,7 +13,6 @@ import {HttpModule} from "@angular/http";
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     HttpModule,
     GiphyManualModule
   ],

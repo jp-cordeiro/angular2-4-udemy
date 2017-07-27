@@ -2,11 +2,10 @@ import {NgModule} from '@angular/core';
 
 import {GiphyManualComponent} from './giphy-manual.component';
 import {GiphySearchService} from "../giphy-search.service";
-import {CommonModule} from "@angular/common";
-import {FormsModule} from "@angular/forms";
+import {ShareModule} from "../../share/share.module";
 
 @NgModule({
-    imports: [CommonModule, FormsModule],
+    imports: [ShareModule],
     exports: [GiphyManualComponent],
     declarations: [GiphyManualComponent],
     providers: [GiphySearchService],
