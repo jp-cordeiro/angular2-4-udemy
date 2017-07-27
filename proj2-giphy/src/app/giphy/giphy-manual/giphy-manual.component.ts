@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {GiphySearchService} from "../giphy-search.service";
 import {Response} from "@angular/http";
 import {Title} from "@angular/platform-browser";
+import {Giphy} from "app/giphy/giphy-manual/giphy.type";
 
 @Component({
     selector: 'giphy-manual',
@@ -12,7 +13,7 @@ export class GiphyManualComponent implements OnInit {
 
     titulo = "Buscador de Gifs";
 
-    gifs: any[] = [];
+    gifs: Giphy[] = [];
     limit: string;
     term: string;
 
