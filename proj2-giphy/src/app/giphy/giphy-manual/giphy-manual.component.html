@@ -1,7 +1,13 @@
 <h1>{{titulo}}</h1>
 
-Quantidade: <input type="number">
-Palavra: <input type="text" (keyup.enter)="pesquisarGiphy()">
+Quantidade: <input type="number" [(ngModel)]="limit">
+Palavra: <input type="text" (keyup.enter)="pesquisarGiphy()" [(ngModel)]="term">
 <input type="button" value="Pesquisar" (click)="pesquisarGiphy()">
 
 <br/>
+
+{{gifs | json}}
+
+<a *ngFor="let gif of gifs">
+    <img src="http://i.giphy.com/{{gif.id}}.gif" title="image {{gif.id}}">
+</a>
